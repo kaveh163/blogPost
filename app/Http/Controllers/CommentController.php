@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Comment;
+use App\Post;
 use Illuminate\Http\Request;
 
 class CommentController extends Controller
@@ -55,9 +56,10 @@ class CommentController extends Controller
      * @param  \App\Comment  $comment
      * @return \Illuminate\Http\Response
      */
-    public function show(Comment $comment)
+    public function show($postID)
     {
-        //
+        $comments = Post::findOrFail($postID)->comments;
+        return view('comments.show', compact(['comments','postID']));
     }
 
     /**
@@ -89,8 +91,9 @@ class CommentController extends Controller
      * @param  \App\Comment  $comment
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Comment $comment)
+    public function destroy($comment)
     {
-        //
+        Comment::destroy($comment);
+
     }
 }
