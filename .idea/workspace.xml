@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3fb5f3f-e5ef-4b9b-b7bc-0509bce746db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/posts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +140,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../php/lesson1/concat.php" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -169,7 +165,9 @@
       <option name="presentableId" value="Default" />
       <updated>1596435219136</updated>
       <workItem from="1596435226430" duration="25378000" />
-      <workItem from="1596609731713" duration="5847000" />
+      <workItem from="1596609731713" duration="6443000" />
+      <workItem from="1603714875604" duration="1560000" />
+      <workItem from="1636681268153" duration="357000" />
     </task>
     <servers />
   </component>
@@ -177,29 +175,13 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="460" y="107" key="FileChooserDialogImpl" timestamp="1596436496522">
+    <state x="460" y="107" key="FileChooserDialogImpl" timestamp="1636681521606">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="460" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1596436496522" />
-    <state width="1344" height="140" key="GridCell.Tab.0.bottom" timestamp="1596436441601">
+    <state x="460" y="107" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1920.1080@0.0.1366.728" timestamp="1636681521606" />
+    <state x="356" y="175" key="com.intellij.ide.util.TipDialog" timestamp="1636681268220">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="140" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596436441601" />
-    <state width="1344" height="140" key="GridCell.Tab.0.center" timestamp="1596436441600">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1344" height="140" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1596436441600" />
-    <state width="1344" height="140" key="GridCell.Tab.0.left" timestamp="1596436441600">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1344" height="140" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1596436441600" />
-    <state width="1344" height="140" key="GridCell.Tab.0.right" timestamp="1596436441601">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1344" height="140" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1596436441601" />
-    <state x="356" y="175" key="com.intellij.ide.util.TipDialog" timestamp="1596609731690">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="356" y="175" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1596609731690" />
+    <state x="356" y="175" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1920.1080@0.0.1366.728" timestamp="1636681268220" />
   </component>
 </project>
