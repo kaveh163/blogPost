@@ -96,4 +96,8 @@ class CommentController extends Controller
         Comment::destroy($comment);
 
     }
+    public function callAction($method, $parameters)
+    {
+        return parent::callAction($method, array_values($parameters));
+    }
 }
