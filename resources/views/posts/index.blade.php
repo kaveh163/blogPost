@@ -12,8 +12,8 @@
                             <th>Post ID</th>
                             <th>Post Title</th>
                             <th>Post Action</th>
-                            <th>Post Delete</th>
-                            <th>comment Show</th>
+                            <th>Delete Post</th>
+                            <th>Show Comment</th>
                             </thead>
                             <tbody>
                             @foreach($posts as $post)
@@ -28,7 +28,7 @@
                                         <input type="submit" value="Delete" class="btn btn-danger">
                                     </form>
                                 </td>
-                                <td><a href="{{route('comment.show',$post->id)}}">comment Show</a></td>
+                                <td><a href="{{route('comment.show',$post->id)}}">View Comment</a></td>
                             </tr>
                                 @endforeach
                             </tbody>
