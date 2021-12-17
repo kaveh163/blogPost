@@ -1,8 +1,10 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
 // Added use App\Post class
 use App\Post;
+use Illuminate\Support\Facades\Log;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,10 +17,18 @@ use App\Post;
 */
 
 Route::get('/', function () {
-    // return view('welcome');
-    // return view('posts.index');
-    $posts = Post::all();
-        return view ('posts.index', compact('posts'));
+    // error_log("I'm here");
+    //     $posts = Post::all();
+    //     dd($posts);
+    //     error_log("I'm Further");
+        
+    //     return view ('pages.index', compact('posts2'));
+        $posts2 = Post::all();
+        error_log("I'm here");
+        // Log::debug((array) $posts);
+        // dd($posts);
+        return view ('pages.index', compact('posts2'));
 });
 Route::resource('/post','PostController');
 Route::resource('/comment','CommentController');
+
