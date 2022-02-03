@@ -1,5 +1,9 @@
 @foreach($comments as $comment)
-    <div @if ($comment->parent_id != null) style="margin-left: 40px" @endif>
+@if ($comment->parent_id == null)
+    <hr>
+    <h4>Comment:</h4>
+@endif
+    <div @if ($comment->parent_id != null) style="margin-left: 40px" @endif class="commentMargin">
 
         <strong>{{$comment->name}}</strong>
         <p>{{$comment->body}}</p>
@@ -21,10 +25,14 @@
                     <input type="hidden" name="parent_id" value="{{$comment->id}}" class="form-control">
                 </section>
                 <section class="form-group">
-                    <input type="submit" value="Reply" class="btn btn-block btn-success">
+                    <input type="submit" value="Reply" class="btn btn-block btn-info" @if ($comment->parent_id != null) style="background-color: gray" @endif>
+                    @if ($comment->replies != null)
+                        <h4>Reply:<h4> 
+                        
+                    @endif
                 </section>
-            </form>
-            @include('posts.commentsDisplay', ['comments' => $comment->replies])
+            </form> 
+            @include('posts.commentsDisplay', ['comments' => $comment->replies]) 
         </section>
 
     </div>

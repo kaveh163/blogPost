@@ -2,12 +2,12 @@
 @section('content')
     <section class="container-fluid">
         <section class="row m-0 p-0">
-            <section class="col-6 offset-3">
+            <section class="col-12 col-sm-6 offset-sm-3">
                 <section class="mt-3" style="font-family: 'Comic Sans MS'">
                     <h5>Post title:{{$post->title}}</h5>
                     <p>Post body:{{$post->body}}</p>
-                    <hr>
-                    <h4>Display Comment</h4>
+                    <!-- <hr> -->
+                    <!-- <h4>Comment</h4> -->
                     @include('posts.commentsDisplay', ['comments' => $post->comments,'post_id'=>$post->id])
                     <hr>
                     <h5>Add Comment</h5>
@@ -36,6 +36,11 @@
 @endsection
 @section('css')
     <style>
+        @media screen and (max-width: 576px) {
+            .commentMargin {
+                margin-left: 0px!important;
+            }
+        }
         p {
             border:1px solid lightgrey;
         }
