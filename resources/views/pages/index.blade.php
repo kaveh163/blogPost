@@ -9,8 +9,8 @@
             
                 <section class="mt-3" style="font-family: 'Comic Sans MS'">
                 
-                    <h5>Post title:{{$post->title}}</h5>
-                    <p>Post body:{{$post->body}}</p>
+                    <!-- <h5>Post title:{{$post->title}}</h5> -->
+                    <h2>{{$post->body}}</h2>
                     <!-- <hr> -->
                     <!-- <h4>Comment</h4> -->
                     @include('posts.commentsDisplay', ['comments' => $post->comments,'post_id'=>$post->id])
@@ -53,9 +53,12 @@
                 margin-left: 40px!important;
             }
         }
-        p {
+        /* p {
             border:1px solid lightgrey;
-        }
+        } */
+        .rebtn {
+        border:none
+    }
         hr {
             background-color:darkgrey;
         }

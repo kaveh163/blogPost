@@ -10,13 +10,13 @@
     @foreach($comments as $comment)
     @if ($comment->parent_id == null)
     <hr>
-    <h4>Comment:</h4>
+    <!-- <h4>Comment:</h4> -->
     @endif
     <div @if ($comment->parent_id != null) style="margin-left: 40px" @endif class="commentMargin">
 
         <strong>{{$comment->name}}</strong>
         <p>{{$comment->body}}</p>
-        <button class="rebtn" data-id="{{$comment->id}}"><i class="fa fa-reply" aria-hidden="true"></i></button>
+        <button class="rebtn" data-id="{{$comment->id}}" data-post="{{$post_id}}"><i class="fa fa-reply" aria-hidden="true"></i></button>
         <div class="append"></div>
         <section>
             
@@ -32,6 +32,7 @@
             $('.rebtn').on('click', function() {
                 console.log('Hello!');
                 const commentID = $(this).attr("data-id");
+                const postID = $(this).attr("data-post");
                 const $nextDiv = $(this).next();
                 console.log($nextDiv);
                 let myHtml = '';
@@ -49,7 +50,7 @@
                         <input type="text" name="body" id="body" class="form-control">
                     </section>
                     <section class="form-group">
-                        <input type="hidden" name="post_id" value="{{$post_id}}" class="form-control">
+                        <input type="hidden" name="post_id" value="${postID}" class="form-control">
                     </section>
                     <section class="form-group">
                         <input type="hidden" name="parent_id" value="${commentID}" class="form-control">

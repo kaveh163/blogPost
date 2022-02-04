@@ -4,8 +4,8 @@
     <section class="row m-0 p-0">
         <section class="col-12 col-sm-6 offset-sm-3">
             <section class="mt-3" style="font-family: 'Comic Sans MS'">
-                <h5>Post title:{{$post->title}}</h5>
-                <p>Post body:{{$post->body}}</p>
+                <!-- <h5>Post title:{{$post->title}}</h5> -->
+                <h2>{{$post->body}}</h2>
                 <!-- <hr> -->
                 <!-- <h4>Comment</h4> -->
                 @include('posts.commentsDisplay', ['comments' => $post->comments,'post_id'=>$post->id])
@@ -48,10 +48,12 @@
         }
     }
 
-    p {
+    /* p {
         border: 1px solid lightgrey;
+    } */
+    .rebtn {
+        border:none
     }
-
     hr {
         background-color: darkgrey;
     }
