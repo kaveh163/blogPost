@@ -48,6 +48,11 @@
                 margin-left: 0px!important;
             }
         }
+        @media screen and (min-width:577px) {
+            .commentMargin {
+                margin-left: 40px!important;
+            }
+        }
         p {
             border:1px solid lightgrey;
         }
