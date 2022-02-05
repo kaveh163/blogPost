@@ -30,15 +30,15 @@
     <script>
         $(function() {
             $('.rebtn').on('click', function() {
-                console.log('Hello!');
+                // console.log('Hello!');
                 const commentID = $(this).attr("data-id");
                 const postID = $(this).attr("data-post");
                 const $nextDiv = $(this).next();
-                console.log($nextDiv);
+                // console.log($nextDiv);
                 let myHtml = '';
                 $nextDiv.empty();
                 myHtml +=
-                `<div class="mt-5">
+                `<div class="mt-2">
                 <form action="{{route('comment.store')}}" method="post" class="frm">
                     @csrf
                     <section class="form-group">
@@ -46,8 +46,8 @@
                         <input type="text" name="name" id="name" class="form-control">
                     </section>
                     <section class="form-group">
-                        <label for="body">Body:</label>
-                        <input type="text" name="body" id="body" class="form-control">
+                        <label for="body">Text:</label>
+                        <textarea class="form-control" rows="5" name="body" id="body"></textarea>
                     </section>
                     <section class="form-group">
                         <input type="hidden" name="post_id" value="${postID}" class="form-control">

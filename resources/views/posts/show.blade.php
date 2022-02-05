@@ -5,7 +5,8 @@
         <section class="col-12 col-sm-6 offset-sm-3">
             <section class="mt-3" style="font-family: 'Comic Sans MS'">
                 <!-- <h5>Post title:{{$post->title}}</h5> -->
-                <h2>{{$post->body}}</h2>
+                <h3><b>{{$post->title}}</b></h3>
+                <p>{{$post->body}}</p>
                 <!-- <hr> -->
                 <!-- <h4>Comment</h4> -->
                 @include('posts.commentsDisplay', ['comments' => $post->comments,'post_id'=>$post->id])
@@ -38,7 +39,7 @@
 <style>
     @media screen and (max-width: 576px) {
         .commentMargin {
-            margin-left: 0px !important;
+            margin-left: 20px !important;
         }
     }
 
@@ -48,9 +49,9 @@
         }
     }
 
-    /* p {
-        border: 1px solid lightgrey;
-    } */
+    p {
+        white-space: pre-wrap;
+    }
     .rebtn {
         border:none
     }
