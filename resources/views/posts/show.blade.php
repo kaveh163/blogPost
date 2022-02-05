@@ -3,7 +3,7 @@
 <section class="container-fluid">
     <section class="row m-0 p-0">
         <section class="col-12 col-sm-6 offset-sm-3">
-            <section class="mt-3" style="font-family: 'Comic Sans MS'">
+            <section class="mt-4" style="font-family: 'Comic Sans MS'">
                 <!-- <h5>Post title:{{$post->title}}</h5> -->
                 <h3><b>{{$post->title}}</b></h3>
                 <p>{{$post->body}}</p>
@@ -29,7 +29,7 @@
                         <input type="submit" value="submit" class="btn btn-success btn-block">
                     </section>
                 </form>
-
+                <hr>
             </section>
         </section>
     </section>
@@ -52,9 +52,11 @@
     p {
         white-space: pre-wrap;
     }
+
     .rebtn {
-        border:none
+        border: none
     }
+
     hr {
         background-color: darkgrey;
     }
@@ -70,5 +72,5 @@
 @endsection
 <script src="{{asset('dist/js/jquery-3.3.1.min.js')}}"></script>
 <script>
-    
+
 </script>

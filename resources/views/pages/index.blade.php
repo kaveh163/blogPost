@@ -7,7 +7,7 @@
 
 
 
-            <section class="mt-3" style="font-family: 'Comic Sans MS'">
+            <section class="mt-4" style="font-family: 'Comic Sans MS'">
 
                 <!-- <h5>Post title:{{$post->title}}</h5> -->
                 <h3><b>{{$post->title}}</b></h3>
@@ -34,7 +34,7 @@
                         <input type="submit" value="submit" class="btn btn-success btn-block">
                     </section>
                 </form>
-
+                <hr>
             </section>
 
             @endforeach
