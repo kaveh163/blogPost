@@ -24,7 +24,7 @@
                         <input type="text" name="name" id="name" class="form-control">
                     </section>
                     <section class="form-group">
-                        <label for="body">Body:</label>
+                        <label for="body">Text:</label>
                         <textarea name="body" id="body" class="form-control"></textarea>
                     </section>
                     <section class="form-group">
